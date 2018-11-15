@@ -128,5 +128,5 @@ def winter_supplies(holiday_supplies)
        holiday_name = capitalized.join
       puts " #{{holiday_name}: supplies.split(" ")
     end
-  end     
+  end
 end
