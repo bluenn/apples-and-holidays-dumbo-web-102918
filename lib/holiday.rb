@@ -77,27 +77,27 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-season = ""
-  holiday_hash.each do |season, season_info|
-    season = season.to_s.capitalize
-    puts "#{season}:"
-    #prints this out on separate line
-    season_info.each do |holiday, holiday_info|
-      holiday_words = holiday.to_s.split("_")
-      #turn object into string, then into array so could use each
-      holiday_words.each do |word|
-        word.capitalize!
-        #need bang to capitalize original word first letter in loop
-      end
-      holiday_words = holiday_words.join(" ")
-      #this is now in array so join to put into string
-      holiday_info = holiday_info.join(", ")
-      # join this one as well
-      puts "  #{holiday_words}: #{holiday_info}" #
-       #prints this out on separate line, puts put a line inbetween
-    end
-  end
-end
+# season = ""
+#   holiday_hash.each do |season, season_info|
+#     season = season.to_s.capitalize
+#     puts "#{season}:"
+#     #prints this out on separate line
+#     season_info.each do |holiday, holiday_info|
+#       holiday_words = holiday.to_s.split("_")
+#       #turn object into string, then into array so could use each
+#       holiday_words.each do |word|
+#         word.capitalize!
+#         #need bang to capitalize original word first letter in loop
+#       end
+#       holiday_words = holiday_words.join(" ")
+#       #this is now in array so join to put into string
+#       holiday_info = holiday_info.join(", ")
+#       # join this one as well
+#       puts "  #{holiday_words}: #{holiday_info}" #
+#        #prints this out on separate line, puts put a line inbetween
+#     end
+#   end
+# end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
@@ -112,4 +112,21 @@ def all_holidays_with_bbq(holiday_hash)
     end
   end
   holiday_names
+end
+
+
+def winter_supplies(holiday_supplies)
+
+ holiay_supplies.each do |season, season_list|
+   puts "#{season.to_s}:"
+
+   season_list.each do |holiday, supplies|
+     holiday_words = holiday.split
+      capitalized = holiday_word.each do |word|
+         word.capitalize!
+       end
+       holiday_name = capitalized.join
+      puts " #{{holiday_name}: supplies.split(" ")
+    end
+  end     
 end
