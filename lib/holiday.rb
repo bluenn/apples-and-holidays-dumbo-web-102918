@@ -116,9 +116,10 @@ end
 
 
 def winter_supplies(holiday_supplies)
-  season = ""
+  
   holiay_supplies.each do |season, season_list|
-    puts "#{season.to_s}:  "
+    puts "#{season}"
+    #puts "#{season.to_s}:  "
 
     season_list.each do |holiday, supplies|
       supplies = supplies.split(" ")
