@@ -124,8 +124,8 @@ def winter_supplies(holiday_supplies)
      holiday_words = holiday.split
      capitalized = holiday_word.each do |word|
       word.capitalize!
-      end   
-      
+      end
+
      holiday_name = capitalized.join
      supplies = supplies.split(" ")
       puts "#{holiday_name}: #{supplies}"
