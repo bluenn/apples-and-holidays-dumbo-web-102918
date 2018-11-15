@@ -123,7 +123,7 @@ def all_supplies_in_holidays(holiday_hash)
 
     season_list.each do |holiday, supplies|
       supplies = supplies.join(", ")
-      holiday = holiday.to_s.split("-")
+      holiday = holiday.to_s.split("_")
         holiday.each do |word|
           word.capitalize!
         end
