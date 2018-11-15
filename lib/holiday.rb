@@ -123,7 +123,7 @@ def winter_supplies(holiday_supplies)
 
     season_list.each do |holiday, supplies|
       supplies = supplies.join(" ")
-      holiday = holiday.split(" ").
+      holiday = holiday.to_s.split(" ").
         holiday.each do |word|
           word.capitalize!
         end
