@@ -62,6 +62,7 @@ def add_new_holiday_with_supplies(holiday_hash)
  holiday_hash.each do |season, value|
    value[:new_holiday] = []
    value[:new_holiday] << "supply"
+ end     
 end
 
 
