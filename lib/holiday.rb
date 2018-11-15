@@ -115,9 +115,9 @@ def all_holidays_with_bbq(holiday_hash)
 end
 
 
-def all_supplies_in_holidays(holiday_supplies)
+def all_supplies_in_holidays(holiday_hash)
 
-  holiay_supplies.each do |season, season_list|
+  holiay_hash.each do |season, season_list|
     #puts "#{season}"
     puts "#{season.to_s}:  "
 
