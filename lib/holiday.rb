@@ -124,6 +124,6 @@ def winter_supplies(holiday_supplies)
       supplies = supplies = supplies.split(" ")
       holiday_caps = holiday.split(" ").capitalize!.join(" ")
       puts "#{holiday_caps}: #{supplies}"
-    end  
+    end
   end
 end
