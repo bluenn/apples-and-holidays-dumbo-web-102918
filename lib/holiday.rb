@@ -116,7 +116,7 @@ end
 
 
 def winter_supplies(holiday_supplies)
-  
+
   holiay_supplies.each do |season, season_list|
     puts "#{season}"
     #puts "#{season.to_s}:  "
